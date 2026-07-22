@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no"/>
+    <style type="text/css">
+        html,body{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+        #container{height:100%}
+    </style>
+    <title>Title</title>
+    <script src="http://api.map.baidu.com/api?v=3.0&ak=YDDTAFQrujEMleUuSmGOvoMPEjCBZ84Q"></script>
+</head>
+<body>
+<div id="container"></div>
+<script>
+    var map = new BMap.Map("container");
+    var point = new BMap.Point(117.078115728003, 36.6721433229127);
+    map.centerAndZoom(point, 15);
+    map.enableScrollWheelZoom(true);
+
+</script>
+</body>
+</html>
